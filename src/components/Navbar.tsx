@@ -1,8 +1,6 @@
 import { Car, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
-import { NavLink } from 'react-router-dom';
-
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,10 +15,9 @@ export default function Navbar() {
           
           <div className="hidden md:flex items-center space-x-8">
             <a href="#courses" className="text-gray-600 hover:text-red-600 transition">Courses</a>
-            <a href="#signs" className="text-gray-600 hover:text-red-600 transition">Traffic Signs</a>
-            <a href="#signals" className="text-gray-600 hover:text-red-600 transition">Signals</a>
-            <a href="" className="text-gray-600 hover:text-red-600 transition">Safety Tips</a>
-            <NavLink to="/SignIn" className="text-gray-600 hover:text-red-600 transition">SignIn</NavLink>
+            {/* <a href="#signs" className="text-gray-600 hover:text-red-600 transition"></a>
+            <a href="#signals" className="text-gray-600 hover:text-red-600 transition"></a> */}
+            <a href="#tips" className="text-gray-600 hover:text-red-600 transition">Safety Tips</a>
             <button className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">
               Get Started
             </button>
@@ -38,8 +35,8 @@ export default function Navbar() {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a href="#courses" className="block px-3 py-2 text-gray-600 hover:text-red-600">Courses</a>
-            <a href="#signs" className="block px-3 py-2 text-gray-600 hover:text-red-600">Traffic Signs</a>
-            <a href="#signals" className="block px-3 py-2 text-gray-600 hover:text-red-600">Signals</a>
+            {/* <a href="#signs" className="block px-3 py-2 text-gray-600 hover:text-red-600">Traffic Signs</a>
+            <a href="#signals" className="block px-3 py-2 text-gray-600 hover:text-red-600">Signals</a> */}
             <a href="#tips" className="block px-3 py-2 text-gray-600 hover:text-red-600">Safety Tips</a>
             <button className="w-full text-left px-3 py-2 bg-red-600 text-white rounded-md hover:bg-red-700">
               Get Started
