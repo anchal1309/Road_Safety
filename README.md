@@ -1,6 +1,7 @@
 # 🚦 Road Safety Hackathon
 
-Welcome to the **Road Safety Hackathon**! This repository houses the code for a web-based platform built to promote road safety awareness, provide educational resources, and track user engagement. Using **React.js** for the frontend and **Flask** for the backend, this project aims to make roads safer for everyone.
+The Road Safety Education Platform is an innovative solution aimed at improving road safety awareness through engaging, interactive courses. The platform leverages modern technologies to deliver personalized learning experiences, assess user knowledge, and provide actionable feedback.
+With features like a recommendation system, chatbot, quizzes, and personalized feedback, the platform ensures that users acquire practical knowledge to stay safe on the roads.
 
 ---
 
@@ -14,6 +15,21 @@ Road accidents claim thousands of lives every year, many of which are preventabl
 - Encourage safer driving habits.
 
 ---
+##  Features
+
+1. Road Safety Courses
+Comprehensive courses covering traffic rules, signs, and road safety measures.
+Designed for learners of all ages and skill levels.
+2. AI-Powered Chatbot
+Assists users by answering questions, providing course recommendations, and guiding them through the platform.
+3. Recommendation System
+Suggests courses and resources based on user preferences, performance, and completed modules.
+4. Personalized Feedback
+Delivers detailed insights into user progress, highlighting strengths and areas for improvement.
+Suggests additional materials and quizzes for skill enhancement.
+5. Interactive Quizzes
+Engaging quizzes to test knowledge on road safety topics.
+Adaptive difficulty based on user performance
 
 ## 🚀 Tech Stack
 
@@ -26,11 +42,7 @@ Road accidents claim thousands of lives every year, many of which are preventabl
 - Python  
 
 **Database**:  
-- SQLite (or upgrade to PostgreSQL/MySQL as required)  
-
-**APIs**:  
-- Google Maps API (for location-based resources)  
-- OpenWeatherMap API (for weather conditions impacting road safety)
+- SQLAlchemy
 
 ---
 
