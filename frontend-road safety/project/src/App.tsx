@@ -6,6 +6,7 @@ import LoginPage from "./components/LoginPage"
 import TrafficLawsPage from './components/Courses/TrafficLawsPage';
 import RoadEthicsPage from './components/Courses/RoadEthicsPage';
 import VehicleMaintenancePage from './components/Courses/VehicleMaintenancePage';
+import Quizzes from "./components/Courses/quizzes"
 
 function App() {
    const router = createBrowserRouter([
@@ -28,6 +29,10 @@ function App() {
     {
       path:"/courses/tvehiclemaintenance",
       element:<><VehicleMaintenancePage/></>
+    },
+    {
+      path:"/quizzes",
+      element:<><Quizzes/></>
     }
     
    ])

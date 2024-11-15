@@ -6,8 +6,12 @@ import Navbar from './Navbar';
 import img1 from "../assets/images/NoParking.png"
 import img2 from "../assets/images/U-Turn.png"
 import img3 from "../assets/images/speedd limit.png"
+import img4 from "../assets/images/quizzes.png"
 import Stop from "../assets/images/stop.png"
 import { Link } from 'react-router-dom';
+import QuizCard from './QuizCard';
+
+
 export default function Body()  {
   return (
     <>
@@ -83,6 +87,40 @@ export default function Body()  {
               image="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&q=80&w=1000"
               duration="6 weeks"
               price="149"
+            />
+            </Link>
+          </div>
+        </div>
+      </section>
+      <section id="quizzes" className="py-16 px-4 bg-gray-100">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">Quizzes</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Link to="/quizzes">
+            <QuizCard
+              title=" Quizzes for Road Ethics "
+              description="Learn essential defensive driving techniques for safer journeys."
+              image={img4}
+              duration="12 questions"
+             
+            />
+            </Link>
+            <Link to="/quizzes">
+            <QuizCard
+              title=" Quizzes for Traffic Signs "
+              description="Master all traffic signs and their meanings for confident driving."
+              image={img4}
+              duration="12 questions"
+              
+            />
+            </Link>
+            <Link to="/quizzes">
+            <QuizCard
+              title="Quizzes For Vehicle Maintenance"
+              description="Take your safety knowledge to the next level with advanced techniques."
+              image={img4}
+              duration="12 questions"
+              
             />
             </Link>
           </div>
