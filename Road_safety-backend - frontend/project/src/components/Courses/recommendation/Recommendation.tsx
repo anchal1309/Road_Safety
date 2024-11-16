@@ -1,4 +1,4 @@
-async function fetchRecommendedMaterials(): Promise<void> {
+export default async  function Recommendation(): Promise<void> {
     try {
         const response = await fetch('/recommended-materials');
         const materials = await response.json();
@@ -24,4 +24,4 @@ async function fetchRecommendedMaterials(): Promise<void> {
     }
 }
 
-document.addEventListener('DOMContentLoaded', fetchRecommendedMaterials);
+document.addEventListener('DOMContentLoaded', Recommendation);

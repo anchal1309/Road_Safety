@@ -7,7 +7,7 @@ import {
   FaHeart,
 } from "react-icons/fa";
 import styles from "./RoadEthicsPage.module.css";
-
+import { Link } from "react-router-dom";
 
 const RoadEthicsPage: React.FC = () => {
   return (
@@ -146,10 +146,12 @@ const RoadEthicsPage: React.FC = () => {
           </li>
         </ul>
       </section>
-
+      
+      <Link to="/quizzes">
       <button className={styles.quizButton}>
         <FaHeart /> Take Quiz
       </button>
+      </Link>
     </div>
   );
 };

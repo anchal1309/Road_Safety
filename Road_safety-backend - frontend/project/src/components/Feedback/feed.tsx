@@ -1,8 +1,7 @@
 import React from 'react';
-import FeedbackPage from './feedback';
-import './App.css';
-import Navbar from '../../Navbar';
-import Footer from './footer';
+import FeedbackPage from './FeedbackPage';
+import './FeedbackPage.css';
+
 
 const Feed: React.FC = () => {
     const strong_areas: string[] = ["JavaScript", "React", "TypeScript"];
@@ -14,16 +13,20 @@ const Feed: React.FC = () => {
     ];
 
     return (
-        <div className="App">
-            <Navbar/>
+    <>
+        
+         <div className="App">
+            
             <FeedbackPage
                 strong_areas={strong_areas}
                 weak_areas={weak_areas}
                 recommendations={recommendations}
             />
-            <Footer/>
-        </div>
+            
+          </div>
+        
+    </>
     );
-}
+};
 
 export default Feed;

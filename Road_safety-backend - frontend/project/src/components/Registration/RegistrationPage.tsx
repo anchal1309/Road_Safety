@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaUser, FaChalkboardTeacher, FaRoad, FaCarCrash } from "react-icons/fa";
-import "./app.css";
+import "./styles.css";
 
 type UserRole = "learner" | "educator";
 
@@ -38,8 +38,8 @@ const RegistrationPage: React.FC = () => {
         <div className="container">
             <h1 className="header"><FaRoad /> Road Safety Learning Courses</h1>
             <form onSubmit={handleSubmit} className="form">
+                <label>Name:</label>
                 <div className="inputGroup">
-                    <label>Name:</label>
                     <input
                         type="text"
                         name="name"
@@ -50,8 +50,8 @@ const RegistrationPage: React.FC = () => {
                     />
                 </div>
 
-                <div className="inputGroup">
-                    <label>Email:</label>
+                <label>Email:</label>
+                <div className="inputGroup">                  
                     <input
                         type="email"
                         name="email"
@@ -62,8 +62,10 @@ const RegistrationPage: React.FC = () => {
                     />
                 </div>
 
-                <div className="inputGroup">
-                    <label>Phone Number:</label>
+
+
+                <label>Phone Number:</label>
+                <div className="inputGroup">                   
                     <input
                         type="tel"
                         name="phoneNumber"
@@ -74,8 +76,8 @@ const RegistrationPage: React.FC = () => {
                     />
                 </div>
 
+                <label>Date of Birth:</label>
                 <div className="inputGroup">
-                    <label>Date of Birth:</label>
                     <input
                         type="date"
                         name="dateOfBirth"
@@ -85,8 +87,9 @@ const RegistrationPage: React.FC = () => {
                     />
                 </div>
 
-                <div className="inputGroup">
-                    <label>Password:</label>
+
+                <label>Password:</label>
+                <div className="inputGroup">   
                     <input
                         type="password"
                         name="password"
@@ -115,9 +118,9 @@ const RegistrationPage: React.FC = () => {
                 </div>
 
                 {role === "learner" && (
-                    <>
-                        <div className="inputGroup">
-                            <label>Preferred Learning Module:</label>
+                    <>  
+                        <label>Preferred Learning Module:</label>
+                        <div className="inputGroup">                          
                             <input
                                 type="text"
                                 name="learnerField1"
@@ -126,8 +129,8 @@ const RegistrationPage: React.FC = () => {
                                 placeholder="e.g., Basic Road Signs"
                             />
                         </div>
-                        <div className="inputGroup">
-                            <label>Hours Available for Study per Week:</label>
+                        <label>Hours Available for Study per Week:</label>
+                        <div className="inputGroup">                          
                             <input
                                 type="number"
                                 name="learnerField2"
@@ -136,8 +139,8 @@ const RegistrationPage: React.FC = () => {
                                 placeholder="e.g., 5 hours"
                             />
                         </div>
-                        <div className="inputGroup">
-                            <label>Learning Goal:</label>
+                        <label>Learning Goal:</label>
+                        <div className="inputGroup">                           
                             <input
                                 type="text"
                                 name="learnerField3"
@@ -151,8 +154,9 @@ const RegistrationPage: React.FC = () => {
 
                 {role === "educator" && (
                     <>
-                        <div className="inputGroup">
-                            <label>Teaching Experience:</label>
+
+                        <label>Teaching Experience:</label>
+                        <div className="inputGroup">                        
                             <input
                                 type="text"
                                 name="educatorField1"
@@ -161,8 +165,9 @@ const RegistrationPage: React.FC = () => {
                                 placeholder="e.g., 5 years in Traffic Safety"
                             />
                         </div>
+                        <label>Specialized Subjects:</label>
                         <div className="inputGroup">
-                            <label>Specialized Subjects:</label>
+                            
                             <input
                                 type="text"
                                 name="educatorField2"
@@ -171,8 +176,9 @@ const RegistrationPage: React.FC = () => {
                                 placeholder="e.g., Road Safety Signs, Traffic Laws"
                             />
                         </div>
+                        <label>Certifications:</label>
                         <div className="inputGroup">
-                            <label>Certifications:</label>
+                            
                             <input
                                 type="text"
                                 name="educatorField3"

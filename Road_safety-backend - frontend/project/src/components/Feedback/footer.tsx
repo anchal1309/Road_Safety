@@ -1,4 +1,4 @@
-
+import react from 'react'
 function Footer() {
     return (
         <div>
@@ -11,7 +11,7 @@ function Footer() {
                     <div>
                         <h4 className="font-semibold mb-4">Quick Links</h4>
                         <ul className="space-y-2">
-                            <li><a href="#courses" className="text-gray-200 hover:text-white">Courses</a></li>
+                            <li><a href="#courses" className="text-red-800 font-bold hover:text-white">Courses</a></li>
                             {/* <li><a href="#signs" className="text-gray-200 hover:text-white">Traffic Signs</a></li> */}
                             {/* <li><a href="#signals" className="text-gray-200 hover:text-white">Signals</a></li> */}
                         </ul>
@@ -19,9 +19,9 @@ function Footer() {
                     <div>
                         <h4 className="font-semibold mb-4">Resources</h4>
                         <ul className="space-y-2">
-                            <li><a href="#" className="text-gray-200 hover:text-white">Blog</a></li>
-                            <li><a href="#" className="text-gray-200 hover:text-white">Safety Tips</a></li>
-                            <li><a href="#" className="text-gray-200 hover:text-white">FAQ</a></li>
+                            <li><a href="#footer" className="text-red-800 font-bold hover:text-white">Blog</a></li>
+                            <li><a href="#footer" className="text-red-800 font-bold hover:text-white">Safety Tips</a></li>
+                            <li><a href="#footer" className="text-red-800 font-bold hover:text-white">FAQ</a></li>
                         </ul>
                     </div>
                     <div>

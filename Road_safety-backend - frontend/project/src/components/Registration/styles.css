@@ -5,10 +5,11 @@ body {
     padding: 0;
 }
 
-.container {
-    max-width: 800px;
+.container {  
+    max-width: 400px;
     margin: 0 auto;
     padding: 20px;
+    max-height: 50%;
 }
 
 h1,
@@ -37,11 +38,14 @@ a:hover {
 }
 
 .container {
+    max-width: 500px;
+    
     font-family: Arial, sans-serif;
     padding: 20px;
-    max-width: 500px;
+    
     margin: auto;
-    background-color: #f0f8ff;
+    margin-top: 100px;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -50,18 +54,21 @@ a:hover {
     text-align: center;
     color: #2c3e50;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
 }
 
 .inputGroup {
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
+    border-width: 2px;
+    
 }
 
 .buttonGroup {

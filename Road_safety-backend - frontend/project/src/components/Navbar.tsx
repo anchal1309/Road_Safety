@@ -1,8 +1,6 @@
 import { Car, Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import FeedbackPage from './components/Courses/recommendation/feedback';
-import Prediction from "./components/Courses/recommendation/feedback";
-import Recommendation from "./components/Courses/recommendation/recommend";
+
 
 
 import { NavLink } from 'react-router-dom';
@@ -16,17 +14,21 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Car className="h-8 w-8 text-red-600" />
-            <span className="ml-2 text-xl font-bold text-gray-800">RoadSafe</span>
+            <NavLink to="/" className="no-underline"><button className="ml-2 text-xl font-bold text-gray-800 no-underline">RoadSafe</button></NavLink>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
             <a href="#courses" className="text-gray-600 hover:text-red-600 transition">Courses</a>
-            <a href="./Courses/recommendation/prediction.tsx" className="text-gray-600 hover:text-red-600 transition">Prediction</a>
-            <a href="./Courses/recommendation/feedback.tsx" className="text-gray-600 hover:text-red-600 transition">Feedback</a>
-            <a href="./Courses/recommendation/recommend.tsx" className="text-gray-600 hover:text-red-600 transition">Recommendation</a>
-            <NavLink to="/SignIn" className="text-gray-600 hover:text-red-600 transition">SignIn</NavLink>
+            <NavLink to="/prediction" className="text-gray-600 hover:text-red-600 transition">Prediction</NavLink>
+            <NavLink to="/feed" className="text-gray-600 hover:text-red-600 transition">Feedback</NavLink>
+            <a href="#quizzes" className="text-gray-600 hover:text-red-600 transition">Quizzes</a>
+            <div className='gap-0'>
+              <NavLink to="/SignIn" className="text-gray-600 hover:text-red-600 transition ">SignIn / </NavLink>
+             <NavLink to="/SignUp" className="text-gray-600 hover:text-red-600 transition">Register</NavLink> 
+            </div>
             <button className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">
-              Get Started
+              <a href="##courses
+              ">Get Started</a>
             </button>
           </div>
 

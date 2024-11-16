@@ -7,6 +7,7 @@ import {
   FaPlayCircle,
 } from "react-icons/fa";
 import styles from "./VehicleMaintenancePage.module.css";
+import { Link } from "react-router-dom";
 
 const VehicleMaintenancePage: React.FC = () => {
   const [checklist, setChecklist] = useState({
@@ -167,10 +168,11 @@ const VehicleMaintenancePage: React.FC = () => {
           </li>
         </ul>
       </section>
-
+      <Link to="/courses/vehiclemaintenancequiz">
       <button className={styles.quizButton}>
         <FaWrench /> Take Quiz
       </button>
+      </Link>
     </div>
   );
 };

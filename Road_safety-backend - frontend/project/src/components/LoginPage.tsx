@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Lock, Mail, Car } from 'lucide-react';
-
+import { Link } from 'react-router-dom';
 export default function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -79,11 +79,11 @@ export default function LoginPage() {
             </div>
 
             <div className="text-sm">
-              <a href="#" className="font-medium text-red-600 hover:text-red-500">
+              <a href="" className="font-medium text-red-600 hover:text-red-600">
                 Forgot your password?
               </a>
-            </div>
-          </div>
+            </div>  
+          </div>  
 
           <button
             type="submit"
@@ -95,9 +95,9 @@ export default function LoginPage() {
           <div className="text-center">
             <p className="text-sm text-gray-600">
               Don't have an account?{' '}
-              <a href="#" className="font-medium text-red-600 hover:text-red-500">
-                Sign up
-              </a>
+              <Link to="/SignUp" className="font-medium text-red-600 hover:text-red-500">
+                SignUp
+              </Link>
             </p>
           </div>
         </form>

@@ -2,7 +2,7 @@ function setProgressLevel(event: Event): void {
     event.preventDefault();
 
     const progressLevel = (document.getElementById('progress_level') as HTMLSelectElement).value;
-    console.log(`Selected Progress Level: ${progressLevel}`);
+    console.log(`Selected Progress Level: ${progressLevel}`);}
 
 function predictPerformance(event: Event): void {
     event.preventDefault();

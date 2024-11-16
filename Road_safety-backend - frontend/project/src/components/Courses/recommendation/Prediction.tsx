@@ -1,4 +1,4 @@
-async function predictPerformance(event: Event): Promise<void> {
+export default async function predictPerformance(event: Event): Promise<void> {
     event.preventDefault();
 
     const interactionTime = (document.getElementById('interaction_time') as HTMLInputElement).value;
