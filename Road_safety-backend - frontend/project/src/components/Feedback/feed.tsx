@@ -4,12 +4,12 @@ import './FeedbackPage.css';
 
 
 const Feed: React.FC = () => {
-    const strong_areas: string[] = ["JavaScript", "React", "TypeScript"];
-    const weak_areas: string[] = ["Testing", "API Integration"];
+    const strong_areas: string[] = ["Emergency Response", "Traffic Laws", "Road Ethics"];
+    const weak_areas: string[] = ["Traffic Signs", "Vehicle Maintenance"];
     
     const recommendations: Array<{ title: string; url: string }> = [
-        { title: "React Documentation", url: "https://reactjs.org/docs/getting-started.html" },
-        { title: "JavaScript Info", url: "https://javascript.info/" },
+        { title: "Traffic Signs", url: "https://www.driving-tests.org/beginner-drivers/how-to-read-traffic-signs/" },
+        { title: "Vehicle Maintenance", url: "https://www.carcare.org" },
     ];
 
     return (
